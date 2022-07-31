@@ -1,0 +1,127 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Register website</title>
+    </head>
+    <style>
+        body {
+            font-family:Georgia;
+            margin-top:6%;
+            color: #446A46;
+        }
+        h1{
+            text-align: center;
+        }
+        .col1{
+            float: left;
+            height: 40%;
+            width: 40%;
+        }
+        .col2{
+            float: right;
+            height: 470px;
+            width: 50%;
+        }
+        * {box-sizing: border-box;}
+        
+        .form-inline {  
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .form-inline select {  
+            vertical-align: middle;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .form-inline input {
+          vertical-align: middle;
+          margin: 10px 0;
+          padding: 10px;
+          background-color: #fff;
+          border: 1px solid #ddd;
+        }
+        
+        .form-inline button {
+          padding: 10px 20px;
+          background-color:#82A284;
+          border: 1px solid #ddd;
+          color: white;
+          cursor: pointer;
+        }
+        
+        .form-inline button:hover {
+          background-color:#446A46;
+        }
+        
+    </style>
+    <body>
+        <div>
+            <div class="col1">
+
+                <img src="C:/Users/ALRAHIMA/OneDrive/Desktop/work/pic.svg" alt="register pic">
+
+            </div>
+            <div class="col2">
+
+                <h1>Register</h1>
+                <form class="form-inline" action="/" method="post">
+                <input type="text" name="name" placeholder="Enter your Name">
+                <input type="email" name="email" placeholder="Enter your Email">
+                <input type="number" name="mno" placeholder="Enter your Mobile number">
+                <input type="text" name="address" placeholder="Enter your Address">
+                <input type="text" name="city" placeholder="Enter your City">
+                <!-- <label for="state">Choose a state:</label> -->
+                <select name="state">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+                <input type="number" name="pin" placeholder="Enter Pincode">
+                <button type="submit" name="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+        
+    </body>
+</html>

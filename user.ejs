@@ -1,0 +1,57 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title >User List</title>
+    </head>
+    <style>
+        body{
+            font-family:sans-serif;
+        }
+        .table{
+            color:#82A284;
+            text-align: center;
+            width:100%;
+            border:solid;
+        }
+        h1{
+            text-align: center;
+            color:#446A46;
+        }
+    </style>
+    <body>
+        <h1>User List</h1>
+        <table class="table" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile No.</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Pincode</th>
+            </tr>
+            <%
+            if(candidate.length!=0){
+            var i=0;
+            candidate.forEach(function(result){
+            %>
+            <tr>
+                <td><%-candidate[i].name %></td>
+                <td><%-candidate[i].email %></td>
+                <td><%-candidate[i].mob_num %></td>
+                <td><%-candidate[i].address %></td>
+                <td><%-candidate[i].city %></td>
+                <td><%-candidate[i].state %></td>
+                <td><%-candidate[i].pincode %></td>
+            </tr>
+            <%  i++; }) %>
+            <% } else{ %>
+                <tr>
+                    <td colspan="7">No Data Found</td>
+                </tr>
+            <% } %>
+
+        </table>
+    </body>
+</html>
